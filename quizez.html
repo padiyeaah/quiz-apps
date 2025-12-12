@@ -1,36 +1,56 @@
-<app-layout></app-layout>
+<!DOCTYPE html>
+<html lang="en">
 
-<a class="back">
-    <div class="btn" style="width: 40px; height: 40px;">
-        <i class='bx bx-chevron-left'></i>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title> -->
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js"></script>
+</head>
+
+<body>
+    <app-layout></app-layout>
+
+    <a class="back">
+        <div class="btn" style="width: 40px; height: 40px;">
+            <i class='bx bx-chevron-left'></i>
+        </div>
+        <p>Kembali</p>
+    </a>
+
+    <!-- Section Quiz -->
+    <section class="content">
+        <div class="board" style="margin-top: 120px;">
+            <p id="question">Pertanyaannya muncul di sini~</p>
+
+
+        </div>
+        <div class="grid-answers">
+            <div class="btn-answer a"><span class="badge">A</span></div>
+            <div class="btn-answer b"><span class="badge">B</span></div>
+            <div class="btn-answer c"><span class="badge">C</span></div>
+            <div class="btn-answer d"><span class="badge">D</span></div>
+        </div>
+    </section>
+
+    <!-- popup -->
+    <div id="result-popup" class="popup hidden">
+        <div class="popup-box">
+            <img src="assets/svg/star.svg" width="80" alt="">
+            <h2>Hasil Quiz</h2>
+            <p id="result-text"></p>
+            <button class="btn-next" id="close-popup">Ulangi</button>
+        </div>
     </div>
-    <p>Kembali</p>
-</a>
 
-<!-- Section Quiz -->
-<section class="content">
-    <div class="board" style="margin-top: 120px;">
-        <p id="question">Pertanyaannya muncul di sini~</p>
+    <script src="js/component-loader.js" defer></script>
+    <script src="js/quizEngine.js" defer></script>
+</body>
 
-
-    </div>
-    <div class="grid-answers">
-        <div class="btn-answer a"><span class="badge">A</span></div>
-        <div class="btn-answer b"><span class="badge">B</span></div>
-        <div class="btn-answer c"><span class="badge">C</span></div>
-        <div class="btn-answer d"><span class="badge">D</span></div>
-    </div>
-</section>
-
-<!-- popup -->
-<div id="result-popup" class="popup hidden">
-    <div class="popup-box">
-        <img src="assets/svg/star.svg" width="80" alt="">
-        <h2>Hasil Quiz</h2>
-        <p id="result-text"></p>
-        <button class="btn-next" id="close-popup">Ulangi</button>
-    </div>
-</div>
-
-<script src="js/component-loader.js" defer></script>
-<script src="js/quizEngine.js" defer></script>
+</html>

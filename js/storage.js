@@ -10,5 +10,5 @@ startBtn.addEventListener("click", () => {
     }
 
     localStorage.setItem("username", name);
-    window.location.href = "/quizez.html";
+    window.location.href = "quizez.html";
 });
