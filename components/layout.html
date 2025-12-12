@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "API_KEY_KAMU",
+            authDomain: "PROJEK.firebaseapp.com",
+            databaseURL: "https://PROJEK-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "PROJEK",
+            storageBucket: "PROJEK.appspot.com",
+            messagingSenderId: "xxxx",
+            appId: "xxxx"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
+    </script>
+
+</head>
+
+<body>
+    <nav>
+        <h5>Quizez</h5>
+    </nav>
+
+    <img class="cloud" src="../assets/svg/cloud.svg" alt="">
+
+    <div class="btn theme">
+        <i class='bx bx-palette'></i>
+    </div>
+
+    <div class="btn volume">
+        <i class='bx bx-volume-full'></i>
+        <i class='bx bx-volume-mute'></i>
+    </div>
+
+    <footer>
+        <p>© 2025 Diyah — crafted with ♡</p>
+    </footer>
+
+    <audio id="bg-music" loop>
+        <source src="assets/music/pou.mp3" type="audio/mpeg">
+    </audio>
+
+
+</body>
+
+</html>

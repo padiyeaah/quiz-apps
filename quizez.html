@@ -1,0 +1,36 @@
+<app-layout></app-layout>
+
+<a class="back">
+    <div class="btn" style="width: 40px; height: 40px;">
+        <i class='bx bx-chevron-left'></i>
+    </div>
+    <p>Kembali</p>
+</a>
+
+<!-- Section Quiz -->
+<section class="content">
+    <div class="board" style="margin-top: 120px;">
+        <p id="question">Pertanyaannya muncul di sini~</p>
+
+
+    </div>
+    <div class="grid-answers">
+        <div class="btn-answer a"><span class="badge">A</span></div>
+        <div class="btn-answer b"><span class="badge">B</span></div>
+        <div class="btn-answer c"><span class="badge">C</span></div>
+        <div class="btn-answer d"><span class="badge">D</span></div>
+    </div>
+</section>
+
+<!-- popup -->
+<div id="result-popup" class="popup hidden">
+    <div class="popup-box">
+        <img src="assets/svg/star.svg" width="80" alt="">
+        <h2>Hasil Quiz</h2>
+        <p id="result-text"></p>
+        <button class="btn-next" id="close-popup">Ulangi</button>
+    </div>
+</div>
+
+<script src="js/component-loader.js" defer></script>
+<script src="js/quizEngine.js" defer></script>
